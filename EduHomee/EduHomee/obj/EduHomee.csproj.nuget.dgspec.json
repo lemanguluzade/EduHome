@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHomee\\EduHomee\\EduHomee.csproj": {}
+    "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHome\\EduHomee\\EduHomee\\EduHomee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHomee\\EduHomee\\EduHomee.csproj": {
+    "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHome\\EduHomee\\EduHomee\\EduHomee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHomee\\EduHomee\\EduHomee.csproj",
+        "projectUniqueName": "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHome\\EduHomee\\EduHomee\\EduHomee.csproj",
         "projectName": "EduHomee",
-        "projectPath": "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHomee\\EduHomee\\EduHomee.csproj",
+        "projectPath": "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHome\\EduHomee\\EduHomee\\EduHomee.csproj",
         "packagesPath": "C:\\Users\\lqulu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHomee\\EduHomee\\obj\\",
+        "outputPath": "C:\\Users\\lqulu\\OneDrive\\Masaüstü\\EduHome\\EduHomee\\EduHomee\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lqulu\\AppData\\Roaming\\NuGet\\NuGet.Config",
