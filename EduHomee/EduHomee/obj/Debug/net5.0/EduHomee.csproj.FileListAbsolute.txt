@@ -329,3 +329,5 @@ C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\re
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Create.cshtml.g.cs
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Update.cshtml.g.cs
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Detail.cshtml.g.cs
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Delete.cshtml.g.cs
