@@ -331,3 +331,6 @@ C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Ra
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Update.cshtml.g.cs
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Detail.cshtml.g.cs
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Delete.cshtml.g.cs
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Views\Sliders\Index.cshtml.g.cs
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Sliders\Index.cshtml.g.cs
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Sliders\Create.cshtml.g.cs
