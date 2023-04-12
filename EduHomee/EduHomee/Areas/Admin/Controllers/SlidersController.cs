@@ -57,5 +57,104 @@ namespace EduHomee.Areas.Admin.Controllers
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+       
+        public async Task<IActionResult> Activity(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Slider dbSlider = await _db.Sliders.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbSlider == null)
+            {
+                return BadRequest();
+            }
+            if (dbSlider.IsDeactive)
+            {
+                dbSlider.IsDeactive = false;
+            }
+            else
+            {
+                dbSlider.IsDeactive = true;
+            }
+            await _db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Slider dbSlider = await _db.Sliders.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbSlider == null)
+            {
+                return BadRequest();
+            }
+            return View(dbSlider);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> Update(int? id,Slider slider)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Slider dbSlider = await _db.Sliders.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbSlider == null)
+            {
+                return BadRequest();
+            }
+            #region SAVE IMAGE
+            if (slider.Photo != null)
+            {
+                if (!slider.Photo.IsImage())
+                {
+                    ModelState.AddModelError("Photo", "Please select image type");
+                    return View();
+                }
+                if (slider.Photo.IsOlder1Mb())
+                {
+                    ModelState.AddModelError("Photo", "MAX 1 Mb");
+                    return View();
+                }
+                string folder = Path.Combine(_env.WebRootPath, "img", "slider");
+                slider.Image = await slider.Photo.SaveFileAsync(folder);
+
+                string path = Path.Combine(_env.WebRootPath, folder, dbSlider.Image);
+                if(System.IO.File.Exists(path))
+                {
+                    System.IO.File.Delete(path);
+                }
+
+                dbSlider.Image = slider.Image;
+            }
+           
+            #endregion
+
+            dbSlider.Title=slider.Title;
+            dbSlider.Description=slider.Description;
+            await _db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Slider dbSlider = await _db.Sliders.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbSlider == null)
+            {
+                return BadRequest();
+            }
+
+            return View(dbSlider);
+        }
+
+
     }
 }
