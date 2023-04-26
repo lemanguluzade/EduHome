@@ -93,7 +93,7 @@ namespace EduHomee.Areas.Admin.Controllers
             }
             return View(dbService);
         }
-        ///////////////////DELETE////////////////
+        /////////////////DELETE////////////////
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

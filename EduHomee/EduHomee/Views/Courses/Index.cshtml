@@ -32,10 +32,19 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="myCourses">
             @await Component.InvokeAsync("Courses", new {take=0})
             
         </div>
+        <div class="row">
+            <div class="spinner-border" role="status">
+                <span id="loadMore" class="visually-hidden">Loading...</span>
+                <input type="hidden" value="@ViewBag.CoursesCount"/>
+            </div>
+            </div>
     </div>
 </div>
 <!-- Course End -->
+@section Scripts{
+    <script asp-append-version="true" src="~/js/loadMore.js"></script>
+}

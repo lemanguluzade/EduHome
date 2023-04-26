@@ -28,8 +28,8 @@ namespace EduHomee.Controllers
             {
                 Sliders = await _db.Sliders.Where(x => !x.IsDeactive).ToListAsync(),
                 Services = await _db.Services.Where(x => !x.IsDeactive).ToListAsync(),
-                
-                Feedbacks= await _db.Feedbacks.ToListAsync(),
+                Courses = await _db.Courses.ToListAsync(),
+                Feedbacks = await _db.Feedbacks.ToListAsync(),
                 About= await _db.Abouts.FirstOrDefaultAsync(),
                 Blogs = await _db.Blogs.ToListAsync(),
                 Events = await _db.Events.ToListAsync()

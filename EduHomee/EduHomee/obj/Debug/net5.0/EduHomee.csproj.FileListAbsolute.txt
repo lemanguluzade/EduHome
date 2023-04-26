@@ -336,3 +336,9 @@ C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Ra
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Sliders\Create.cshtml.g.cs
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Sliders\Detail.cshtml.g.cs
 C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Areas\Admin\Views\Sliders\Update.cshtml.g.cs
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\obj\Debug\net5.0\Razor\Views\Shared\_LoadMoreCoursesPartial.cshtml.g.cs
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\lqulu\OneDrive\Masaüstü\EduHome\EduHomee\EduHomee\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
