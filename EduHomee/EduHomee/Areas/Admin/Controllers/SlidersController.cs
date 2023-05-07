@@ -1,16 +1,19 @@
 ﻿using EduHomee.DAL;
 using EduHomee.Helper;
 using EduHomee.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Threading.Tasks;
 
 namespace EduHomee.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class SlidersController : Controller
     {
         private readonly AppDbContext _db;

@@ -1,5 +1,7 @@
 ﻿using EduHomee.DAL;
+using EduHomee.Helper;
 using EduHomee.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -9,6 +11,7 @@ using System.Threading.Tasks;
 namespace EduHomee.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ServicesController : Controller
     {
         private readonly AppDbContext _db;

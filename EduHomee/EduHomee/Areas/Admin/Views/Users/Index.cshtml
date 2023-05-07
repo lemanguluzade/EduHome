@@ -1,0 +1,72 @@
+﻿@model List<UserVM>
+<!-- Bordered Table -->
+<div class="card">
+    <div class="card-header" style="display:flex; justify-content:space-between">
+        <h2>
+            Users
+        </h2>
+        <div>
+            <a asp-action="Create" class="btn btn-primary text-white rounded-pill" style="margin-right:10px">Create</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive text-nowrap">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th style="text-align:right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (UserVM item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.Name</strong>
+                            </td>
+
+                            <td>@item.Surname</td>
+                            <td>@item.Username</td>
+                            <td>@item.Email</td>
+                            <td>@item.Role</td>
+                           
+                            <td>
+                                @if (item.IsDeactive == true)
+                                {
+                                    <span style="padding:4px 6px;background-color:red;color:white;border-radius:10px">Deactive</span>
+
+                                }
+                                else
+                                {
+                                    <span style="padding:4px 6px;background-color:green;color:white;border-radius:10px">Active</span>
+                                }
+                            </td>
+
+                            <td>
+                                <div style="display:flex; justify-content:flex-end">
+                                    <a class="btn btn-warning text-white rounded-pill" style="margin-right:10px" asp-action="ResetPassword" asp-route-id="@item.Id">Reset Password</a>
+                                    <a class="btn btn-info text-white rounded-pill" style="margin-right:10px" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                                    @if (item.IsDeactive)
+                                    {
+                                        <a class="btn btn-success text-white rounded-pill" style="margin-right:10px;width:118px" asp-action="Activity" asp-route-id="@item.Id">Activate</a>
+                                    }
+                                    else
+                                    {
+                                        <a class="btn btn-danger text-white rounded-pill" style="margin-right:10px;width:118px" asp-action="Activity" asp-route-id="@item.Id">DeActivate</a>
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--/ Bordered Table -->
